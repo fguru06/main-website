@@ -11,6 +11,7 @@
 			}
 			iframe {
 				min-height: 100vh; /* Ensure iframe takes full viewport height */
+				overflow: auto; /* Allow scrolling */
 			}
 		</style>
 	</head>
@@ -21,7 +22,7 @@
 			style="border: none"
 		></iframe>
 		<script>
-			iFrameResize({ log: true });
+			iFrameResize({ log: true, heightCalculationMethod: "bodyScroll" });
 		</script>
 	</body>
 </html>
